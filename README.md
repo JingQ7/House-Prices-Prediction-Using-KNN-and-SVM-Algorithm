@@ -11,7 +11,7 @@ Install Scrapy Framework, PyMySQL, Scikit-learn, NumPy, Pandas and other depende
 <code>scrapy genspider -t basic rew www.rew.ca</code>
 
 ## Data Collection 
-Getting data using PyMySQL and save in MySQL database
+Getting data using PyMySQL and save in MySQL database <br>
 Exporting scraped data as a json: <code>scrapy crawl rew -o rew_data.json</code>
 
 ## Data Preparation 
