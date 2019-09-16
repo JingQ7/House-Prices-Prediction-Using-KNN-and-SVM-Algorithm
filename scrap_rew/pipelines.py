@@ -5,7 +5,7 @@ class RewhousePipeline(object):
 
     def process_item(self, item, spider):
 
-        db = pymysql.connect(host='localhost', user='root', password='qijingjing8081', database='rew')
+        db = pymysql.connect(host='localhost', user='root', password='root', database='rew')
         cursor = db.cursor()
         #cursor.execute('create table house_info (price varchar(100), addr varchar(200), link varchar(200))')
 
