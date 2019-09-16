@@ -1,6 +1,6 @@
 # Scrape Real Estate Website with
 
-Scrape all houses inforamtion for sale in Toronto from <link>https://www.rew.ca/properties/areas/toronto-on</link> with Scrapy Framework
+Scrape all houses inforamtion for sale in Toronto from <link>https://www.rew.ca/properties/areas/toronto-on</link> with Scrapy Framework.
 
 ## Set Up
 Create a virtual environment</br>
