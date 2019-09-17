@@ -10,5 +10,6 @@ import scrapy
 
 class RewhouseItem(scrapy.Item):
     price = scrapy.Field()
+    sqft = scrapy.Field()
     addr = scrapy.Field()
     link = scrapy.Field()
