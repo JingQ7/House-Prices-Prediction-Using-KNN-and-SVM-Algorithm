@@ -15,9 +15,10 @@ class RewSpider(scrapy.Spider):
     def parse(self, response):
         item = RewhouseItem()
         item['price'] = response.xpath('//div[@class="displaypanel-title hidden-xs"]/text()').extract()
+        item['sqft'] = response.xpath('//ul[@class="l-pipedlist"]/li[last()]/text()').extract()
         item['addr'] = response.xpath('//div[@class="displaypanel-body"]/a/@title').extract()
         item['link'] = response.xpath('//div[@class="displaypanel-body"]/a/@href').extract()
         yield item
-        for i in range(2, 25):
+        for i in range(2, 26):
             rew_url = 'https://www.rew.ca/properties/areas/toronto-on/page/' + str(i)
             yield Request(url=rew_url, callback=self.parse)
