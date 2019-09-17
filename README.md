@@ -1,6 +1,6 @@
 # Scrape Real Estate Website and House Prices Prediction Using KNN and SVM Algorithm
 
-Scrape all houses information for sale in Toronto from <link>https://www.rew.ca/properties/areas/toronto-on</link> with Scrapy Framework.
+Scrape all houses information for sale in Toronto from <link>https://www.rew.ca/properties/areas/toronto-on</link> with Scrapy Framework, then built KNN and SVM models to predicting house price.
 
 ## Set Up
 Create a virtual environment</br>
