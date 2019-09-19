@@ -25,7 +25,7 @@ Predicting the test set <br>
 
 ## Output
 Evaluating model <br>
-Getting accuracy score for KNN model: 6.67% <br>
-Getting accuracy score for SVM model: 9.34% <br>
+Getting accuracy score for KNN model: 66.67% <br>
+Getting accuracy score for SVM model: 93.34% <br>
 
 The results show that I need take other features into consideration, like the number of bedroom, location, etc.
