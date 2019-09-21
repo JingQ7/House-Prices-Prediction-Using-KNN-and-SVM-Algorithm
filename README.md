@@ -17,6 +17,9 @@ Exporting scraped data as a json: <code>scrapy crawl rew -o rew_data.json</code>
 ## Data Preparation 
 Transform raw data into to NumPy ndarray data, then clean independent variables and dependent variables
 
+## Data Visualization
+Plot data
+
 ## Data Processing
 Splitting the dataset into the Training and Test set <br>
 Feature Scaling <br>
