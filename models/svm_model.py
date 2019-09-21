@@ -17,7 +17,6 @@ for i in range(0, len(org_y)):
         each = org_y[i][j]
         each = int(each.replace(',', '').replace('$', '').replace('\n', ''))
         y = numpy.append(y, each)
-y = y.reshape(-1, 1)
 
 # Extract and clean independent variables
 org_x = all_data[1]
@@ -36,9 +35,15 @@ for i in range(0, len(org_x)):
         elif '<' in each:
             each = int(each.replace('<', '').replace('sf', ''))
         x = numpy.append(x, each)
-x = x.reshape(-1, 1)
+
+# Plot
+df = pandas.DataFrame({'x':pandas.Series(x), 'y':pandas.Series(y)})
+seaborn.regplot('x', 'y', data=df)
+plt.show()
 
 # Splitting the dataset into the Training and Test set
+x = x.reshape(-1, 1)
+y = y.reshape(-1, 1)
 x_train,x_test,y_train,y_test = train_test_split(x, y, test_size=0.2, random_state=0)
 
 # Feature Scaling
